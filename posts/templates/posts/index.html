@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'posts/layout.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POSTS</title>
+    <h1>POSTS POSTS</h1>
+    <ul class="collection">
+        {% for post in posts %}
+            <li class = "collection-item">{{post.title}}</li>
+        {% endfor %}
+    </ul>
+</head>
+<body>
+
+</body>
+</html>
+{% endblock %}
